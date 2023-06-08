@@ -17,6 +17,9 @@ header{
     height: 100%;
     grid-column: 2/3;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 main{
@@ -56,5 +59,49 @@ aside{
 
 header div{
     border: solid black;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
 }
 
+header form{
+    border: solid black;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-bar{
+    width:50%;
+}
+
+.profile{
+    width: 35%;
+    justify-content: center;
+}
+
+.profile img{
+    padding-right: 8px;
+}
+
+.welcome-message-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-right: 0;
+}
+
+.welcome-message-text :nth-child(1){
+    font-size: 12px;
+}
+
+.welcome-message-text :nth-child(2){
+    font-size: 16px;
+}
