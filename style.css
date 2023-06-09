@@ -79,7 +79,7 @@ header form{
 }
 
 .search-bar{
-    width:50%;
+    width:100%;
     align-self: center;
 }
 
@@ -104,7 +104,8 @@ header form{
     padding: 5px;
     border: none;
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: rgba(211, 211, 211, 0.445);
+    width: 90%;
 }
 
 .profile{
@@ -142,7 +143,7 @@ header form{
 }
 
 .welcome-message-text :nth-child(2){
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -168,6 +169,7 @@ header form{
     display: block;
     text-decoration: none;
     color: white;
+    font-size: 14px;
     font-weight: bold;
     background-color: dodgerblue;
     border-radius: 20px;
