@@ -16,10 +16,9 @@ header{
     width: 100%;
     height: 100%;
     grid-column: 2/3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 main{
@@ -58,7 +57,7 @@ aside{
 }
 
 header div{
-    border: solid black;
+    /*border: solid black;*/
     height: 50%;
     display: flex;
     flex-direction: row;
@@ -68,7 +67,7 @@ header div{
 }
 
 header form{
-    border: solid black;
+    /*border: solid black;*/
     height: 50%;
     display: flex;
     flex-direction: row;
@@ -83,17 +82,25 @@ header form{
 .search-bar button{
     border-radius: 50%;
     border: none;
-    padding-left: 8px;
+    margin-left: 8px;
 }
 
 .search-bar button img:active{
     background-color: rgba(17, 15, 15, 0.096);
+    border: solid black 1px;
 }
 
 .search-bar button img{
     border-radius: 50%;
     position: relative;
     top: 2px;
+}
+
+.search-bar input{
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
+    background-color: lightgrey;
 }
 
 .profile{
@@ -109,7 +116,7 @@ header form{
 .welcome-message-text{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 80%;
     align-items: flex-start;
     justify-content: space-around;
     padding-right: 0;
@@ -121,4 +128,5 @@ header form{
 
 .welcome-message-text :nth-child(2){
     font-size: 16px;
+    font-weight: bold;
 }
