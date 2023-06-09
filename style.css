@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -17,7 +18,7 @@ header{
     height: 100%;
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 8fr 4fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -109,10 +110,17 @@ header form{
 .profile{
     width: 100%;
     align-self: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .profile img{
     padding-right: 8px;
+}
+
+.profile p{
+    margin-right: 8px;
+    font-weight: bold;
 }
 
 .welcome-message{
@@ -136,4 +144,35 @@ header form{
 .welcome-message-text :nth-child(2){
     font-size: 16px;
     font-weight: bold;
+}
+
+.toolbar{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toolbar ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    min-width: 320px;
+    max-width: 360px;
+}
+
+
+.toolbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    width: 100px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
 }
