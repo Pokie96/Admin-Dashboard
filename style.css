@@ -181,3 +181,11 @@ header form{
     line-height: 35px;
     text-align: center;
 }
+
+.left-main{
+    border: solid black;
+}
+
+.right-main{
+    background-color: blue;
+}
