@@ -77,15 +77,48 @@ p{
     justify-content: space-between;
 }
 
+.nav-bar ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar ul li img{
+    height: 16px;
+}
+
+.icon{
+    height: 16px;
+    fill: #f1f5f9;
+}
+
+#title-icon{
+    height: 30px;
+}
+
 .nav-bar ul li a{
     color: #f1f5f9;
     text-decoration: none;
+    margin-left: 5px;
 }
 
 .title{
-    font-size: 20px;
     align-self: center;
-    justify-self: center;
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;;
+}
+
+.title h1{
+    font-size: 20px;
+}
+
+
+.title img{
+    height: 26px;
+    margin: 5px;
 }
 
 header div{
@@ -231,7 +264,7 @@ header form{
 
 .project .text-wrapper{
     overflow: hidden;
-    max-height: 55px;
+    max-height: 60%;
     max-width: 80%;
     margin-left: 15px;
     margin-top: 20px;
