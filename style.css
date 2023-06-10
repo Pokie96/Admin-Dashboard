@@ -183,7 +183,31 @@ header form{
 }
 
 .left-main{
-    border: solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    gap: 15px;
+    margin: 15px
+}
+
+.left-main h2{
+    font-size: 16px;
+    align-self: flex-end;
+}
+
+.project{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project .text-wrapper h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .right-main{
