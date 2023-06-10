@@ -197,17 +197,31 @@ header form{
 
 .project{
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px 10px 10px 5px;
+    box-shadow: 3px 3px 3px grey, -5px 0px orange ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.project .text-wrapper{
+    overflow: hidden;
+    max-height: 55px;
+    max-width: 70%;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .project .text-wrapper h3{
     font-size: 14px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.project .text-wrapper p{
+    font-size: 10px;
+    color: darkgrey;
+    font-weight: 900;
 }
 
 .right-main{
