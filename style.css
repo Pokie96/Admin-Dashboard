@@ -313,6 +313,14 @@ header form{
     margin-bottom: 10px;
 }
 
+.text-wrapper .profile-info{
+    overflow: hidden;
+    max-height: 80%;
+    max-width: 90%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
 .text-wrapper .paragraph{
     overflow: hidden;
     max-height: 80%;
@@ -335,5 +343,12 @@ header form{
     max-width: 380px;
     align-self: center;
     justify-self: center;
+}
+
+.trending-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
 }
 
